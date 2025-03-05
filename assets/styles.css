@@ -5,13 +5,13 @@
 .st-emotion-cache-18netey {
     border : 2px solid black;
     border-radius : 8px;
-    color : rgb(192, 57, 43);
+    color : rgb(192, 57, 43) !important;
     display : flex;
     justify-content : center;
 }
 
 .subtitle1 {
-    color: rgb(231, 76, 60);
+    color: black;
     font-weight: bold;
     display : flex;
     justify-content : center;
