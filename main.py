@@ -39,7 +39,7 @@ if upload_files:
         st.write(f"<p class='file_size'>** File Size :** {file.size/1024} </p>", unsafe_allow_html=True)
 
         # Show 5 rows of our data frame(df)
-        st.subheader("🔎 Preview the Head of the Data Frame")
+        st.write("<h3 class='subheading'>🔎 Preview the Head of the Data Frame </h3>", unsafe_allow_html=True)
         st.dataframe(df.head())
 
         # Options for Data Cleaning
@@ -60,17 +60,17 @@ if upload_files:
 
         # Choose specific column to keep or convert
 
-        st.subheader("Select Columns to Convert")
+        st.write("<h3 class='subheading'>Select Columns to Convert </h3>", unsafe_allow_html=True)
         columns = st.multiselect(f"Choose column for {file.name}" , df.columns, default=df.columns)
         df = df[columns]
 
         # Create some Visualization
-        st.subheader("📊 Data Visualization")
+        st.write("<h3 class='subheading'> 📊 Data Visualization </h3>", unsafe_allow_html=True)
         if st.checkbox(f"Show Visualization for {file.name}"):
             st.line_chart(df.select_dtypes(include='number').iloc[:,:2])
 
         # File Conversion -> CSV to Excel
-        st.subheader("🔄 File Conversion Options")
+        st.write("<h3 class='subheading'> 🔄 File Conversion Options </h3>", unsafe_allow_html=True)
         conversion_type = st.radio(f"Convert {file.name} to :", ["CSV","Excel"], key=file.name)
         if st.button(f"Convert {file.name}"):
             buffer = BytesIO()
@@ -91,5 +91,3 @@ if upload_files:
                 file_name=file_name,
                 mime=mime_type
             )
-
-st.success("All files processed!")
