@@ -9,7 +9,7 @@ from io import BytesIO
 st.set_page_config(page_title="Data Sweeper", layout="wide")
 
 # Application setup
-st.title("🔄 FILE CONVERSION & 🧹 DATA CLEANING")
+st.write("<h1 class='title'>🔄 FILE CONVERSION & 🧹 DATA CLEANING </h1>", unsafe_allow_html=True)
 
 def styling_css():
     with open('assets/styles.css') as f:
