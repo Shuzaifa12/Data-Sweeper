@@ -18,6 +18,14 @@
     font-size: 30px !important;
 }
 
+.subheading {
+    border : 2px solid black;
+    border-radius : 8px;
+    color : rgb(192, 57, 43) !important;
+    display : flex;
+    justify-content : center;
+}
+    
 .file_name , .file_size {
     font-size : 15px !important;
     color : rgb(231, 76, 60);
