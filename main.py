@@ -13,7 +13,12 @@ st.write("<h1 class='title'>🔄 FILE CONVERSION & 🧹 DATA CLEANING </h1>", un
 
 def styling_css():
     with open('assets/styles.css') as f:
-        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+         st.markdown(f"""<style>
+                .stApp {{
+                background-color : rgb(223, 249, 251) !important;
+                }}
+               {f.read()}
+               </style>""", unsafe_allow_html=True)
 
 styling_css()
 
