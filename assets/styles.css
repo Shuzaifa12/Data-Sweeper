@@ -2,7 +2,7 @@
     background-color : rgb(223, 249, 251)
 }
 
-.st-emotion-cache-18netey {
+.title {
     border : 2px solid black;
     border-radius : 8px;
     color : rgb(192, 57, 43) !important;
@@ -16,11 +16,6 @@
     display : flex;
     justify-content : center;
     font-size: 30px !important;
-}
-
-.st-emotion-cache-89jlt8 {
-    font-size: 30px !important;
-    color: rgb(44, 62, 80);
 }
 
 .file_name , .file_size {
