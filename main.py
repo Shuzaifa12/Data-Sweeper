@@ -43,7 +43,7 @@ if upload_files:
         st.dataframe(df.head())
 
         # Options for Data Cleaning
-        st.subheader("🧹 Data Cleaning Options")
+        st.write("<h3 class='subheading'> 🧹 Data Cleaning Options </h3>", unsafe_allow_html=True)
         if st.checkbox(f"Clean data for {file.name}"):
             col1 , col2 = st.columns(2)
 
